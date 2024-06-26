@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        /* li:first-child{
+            background: green;
+            height: 50px;
+            width: 50px;
+        }
+        li:last-child{
+            background-color: red;
+        } */
+
+        /* 2n,2n+1,5n,n+5(5个以上),-n+5(5个以下) */
+        li:nth-child(2n){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>li 1</li>
+        <li>li 2</li>
+        <li>li 3</li>
+        <li>li 4</li>
+        <li>li 5</li>
+        <li>li 6</li>
+    </ul>
+</body>
+</html>

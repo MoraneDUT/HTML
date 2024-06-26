@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- input标签基础 -->
+
+<body>
+    <form action="">
+        <!-- 输入什么就显示什么 -->
+        文本框：<input type="text">
+        <br><br>
+        <!-- 输入什么只显示* -->
+        密码框：<input type="password">
+        <br><br>
+        <!-- 提供选择 -->
+        单选框：<input type="radio">
+        <br><br>
+        多选框：<input type="checkbox">
+        <br><br>
+        上传文件：<input type="file">
+        <br><br>
+
+
+        <!-- input标签占位文本 -->
+        文本框：<input type="text" placeholder="请输入用户名">
+        <br><br>
+        密码框：<input type="password" placeholder="请输入密码">
+        <br><br>
+
+
+        <!-- 单选框radio及其默认选中 -->
+        性别：
+        <input type="radio" name="gender" checked>男
+        <input type="radio" name="gender">女
+        <br><br>
+
+
+        <!-- 多个文件上传 -->
+        多个文件上传：<input type="file" multiple>
+        <br><br>
+
+
+        <!-- 复选框多次默认选中 -->
+        兴趣爱好：
+        <input type="checkbox" checked>敲代码
+        <input type="checkbox" checked>敲前端代码
+        <input type="checkbox">敲前端HTML代码
+        <br><br>
+
+
+        <!-- 下拉菜单及其默认选中 -->
+        城市：
+        <select>
+            <option>北京</option>
+            <option>上海</option>
+            <option>广州</option>
+            <option>深圳</option>
+            <option selected>武汉</option>
+        </select>
+        <br><br>
+
+
+        <!-- 文本域标签（多行输入文本的表单控件，右下角有拖拽功能，未来会删掉） -->
+        文本框：<textarea placeholder="请输入评论"></textarea>
+        <br><br>
+
+
+        <!-- Lable标签：网页中，某个标签的说明文本 -->
+        <!-- Lable标签-增大点击范围 -->
+        性别：
+        <input type="radio" name="gender1" id="man"><label for="man">男</label>
+        <input type="radio" name="gender1" id="woman"><label for="woman">女</label>
+        <br><br>
+        <!-- 简洁方式写法 -->
+        性别：
+        <label><input type="radio" name="gender2">男</label>
+        <label><input type="radio" name="gender2">女</label>
+        <br><br>
+
+
+        <!-- 按钮表单标签 -->
+        <button type="submit">提交按钮</button>
+        <button type="reset">重置按钮</button>
+        <!-- 重置按钮需要使用form标签囊括 -->
+        <button type="button">普通按钮</button>
+    </form>
+    
+</body>
+
+</html>

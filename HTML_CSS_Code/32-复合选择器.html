@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .yanse .colour{
+            color: blueviolet;
+        } */
+         div,p,span{
+            color: aqua;
+         }
+         /* 交集选择器 */
+         p.box{
+            color: blueviolet;
+         }
+    </style>
+</head>
+<body>
+    <!-- <span>span 标签</span>
+    <div class="yanse">
+        <span class="colour">文字颜色是绿色</span>
+        <p>
+            <span class="colour">孙子</span>
+        </p>
+    </div> -->
+
+    <!-- 并集选择器 -->
+    <div> div 标签</div>
+    <p>p 标签</p>
+    <span>span 标签</span>
+    <span>span 标签2</span>
+
+    <!-- 交集选择器 -->
+     <p class="box">p 标签，使用了类选择器</p>
+     <p>p 标签</p>
+     <div class="box">div 标签，使用了类选择器</div>
+</body>
+</html>

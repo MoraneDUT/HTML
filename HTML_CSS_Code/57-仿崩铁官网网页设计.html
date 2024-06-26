@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-attachment: fixed;
+            background-image: url(https://ts1.cn.mm.bing.net/th/id/R-C.43819aac5563c0d2965d47a78a5891d7?rik=dMCgfjQusX9wmw&riu=http%3a%2f%2fs2.best-wallpaper.net%2fwallpaper%2f2560x1440%2f1711%2fBlue-space-stars-universe_2560x1440.jpg&ehk=P0IFxoSQTzxr6bqFgf0dulB6cgWQVz11KFdB5f5YYzk%3d&risl=&pid=ImgRaw&r=0);
+        }
+
+        .navigation {
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+        }
+
+        .navigation .logo img {
+            width: 162.5px;
+            height: 86px;
+        }
+
+        .navigation .message a {
+            color: #747474;
+            font-size: 15px;
+            text-decoration: none;
+            display: block;
+            width: 92.5px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .navigation .message a:hover {
+            color: #E1B066;
+            border-bottom: 2.99px solid #E1B066;
+        }
+
+        .navigation .message a:nth-child(1) {
+            margin-left: 20px;
+        }
+
+        .navigation .message {
+            display: flex;
+        }
+
+
+        .navigation .right {
+            display: flex;
+            justify-content: flex-end;
+            width: 1500px;
+            height: 50px;
+        }
+
+        .navigation .right .grow {
+            display: block;
+            width: 100px;
+            height: 50px;
+            color: #747474;
+            font-size: 15px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+            margin-right: 50px;
+        }
+
+        .navigation .right .denglu {
+            display: flex;
+            margin-right: 20px;
+        }
+
+        .navigation .right .denglu .login {
+            display: block;
+            width: 75px;
+            height: 50px;
+            color: #747474;
+            font-size: 15px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .navigation .right .denglu img {
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+        }
+
+        .navigation .right .download {
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            background-color: rgba(246, 189, 3, 0.6);
+            border-radius: 0 0 0 20px;
+        }
+
+        .navigation .right .download .downloading {
+            color: #1C1919;
+            font-size: 15px;
+            text-decoration: none;
+            line-height: 50px;
+        }
+
+        .secondary{
+            margin: 70px auto;
+            width: 970px;
+            height: 30px;
+            display: flex;
+        }
+
+
+        .secondary .secondaryleft img{
+            width: 115px;
+            height: 30px;
+        }
+
+        .secondary .secondaryright{
+            display: flex;
+            width: 1000px;
+            justify-content: flex-end;
+        }
+
+        .secondary .secondaryright ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+
+        .secondary .secondaryright li{
+            color: #fff;
+            width: 90px;
+            height: 21px;
+            line-height: 21px;
+        }
+
+        .secondary .secondaryright li:nth-child(2){
+            color: #E1B066;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <img src="https://webstatic.mihoyo.com/upload/event/2022/07/29/c31dd1d732913e4ab5f3d4f03346a706_9097205533659112586.png"
+                alt="">
+        </div>
+        <div class="message">
+            <a href="https://sr.mihoyo.com/?nav=home&type=news_all">首页</a>
+            <a href="https://sr.mihoyo.com/?nav=news&type=news_all">新闻</a>
+            <a href="https://sr.mihoyo.com/?nav=character&type=news_all">角色</a>
+            <a href="https://sr.mihoyo.com/?nav=world&type=news_all">世界</a>
+            <a href="https://www.miyoushe.com/sr/">社区</a>
+            <a href="https://webstatic.mihoyo.com/payment/sr/index.html?utm_source=official_web">充值中心</a>
+        </div>
+        <div class="right">
+            <a class="grow" href="https://jiazhang.mihoyo.com/index.html#/">成长关爱系统</a>
+            <div class="denglu">
+                <a class="login" href="#">登 录<img
+                        src="data:image/png;base64,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"
+                        alt="">
+                </a>
+            </div>
+            <div class="download">
+                <a class="downloading" href="https://launcher.mihoyo.com/">
+                    <h3>下载游戏</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="secondary">
+        <div class="secondaryleft">
+            <a href="https://pvp.qq.com/"><img src="data:image/png;base64,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" alt=""></a>
+        </div>
+        <div class="secondaryright">
+            <ul>
+                <li>最新</li>    
+                <li>新闻</li>    
+                <li>活动</li>    
+                <li>公告</li>    
+            </ul>    
+        </div>
+    </div>
+    <div class="main" style="margin-top: 20px;">
+        <a href="https://sr.mihoyo.com/news/124192?nav=news&type=news" style="text-decoration: none">
+            <div
+                style="position: relative; text-align: left; background-color: rgba(7, 7, 7, 0.4); width: 1200px; height: 150px; white-space: nowrap; margin: 0 auto; padding: 10px; box-sizing: border-box;border-radius: 10px;">
+                <div
+                    style="background-color: #debe79; width: 20px; height: 15px; color: #212121; font-size: 7px; text-align: center; line-height: 15px; margin-right: 10px; display: inline-block; vertical-align: middle;">
+                    新闻</div>
+                <p
+                    style="color: #f0f0f0; font-size: 15px; font-weight: bold; display: inline-block; vertical-align: middle;">
+                    《崩坏：星穹铁道》美梦谢幕PV：「塔塔洛夫向你致意」</p>
+                <p style="color: #8e8e8e;font-size: 13px;text-decoration: none;margin-top: 15px;">「你还是个孩子的时候，也尝试过投石入水，并乐在其中吧？」</p>
+                <img src="https://fastcdn.mihoyo.com/content-v2/hkrpg/124192/03d542f86892eb5e685c57a58f066f71_7948666090586458356.jpg"
+                    style="width: 400px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            </div>
+        </a>
+        <br>
+        <a href="https://sr.mihoyo.com/news/124173?nav=news&type=news" style="text-decoration: none">
+            <div
+                style="position: relative; text-align: left; background-color: rgba(7, 7, 7, 0.4); width: 1200px; height: 150px; white-space: nowrap; margin: 0 auto; padding: 10px; box-sizing: border-box;border-radius: 10px;">
+                <div
+                    style="background-color: #debe79; width: 20px; height: 15px; color: #212121; font-size: 7px; text-align: center; line-height: 15px; margin-right: 10px; display: inline-block; vertical-align: middle;">
+                    新闻</div>
+                <p
+                    style="color: #f0f0f0; font-size: 15px; font-weight: bold; display: inline-block; vertical-align: middle;">
+                    《崩坏：星穹铁道》走近星穹——「差分宇宙」特别节目
+                </p>
+                <p style="color: #8e8e8e;font-size: 13px;text-decoration: none;">这个夏天，《崩坏：星穹铁道》模拟宇宙史诗级重磅更新！</p>
+                <img src="https://fastcdn.mihoyo.com/content-v2/hkrpg/124173/ea31d168f952f7162cd022c6327694cc_1991747581419154612.png"
+                    style="width: 400px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            </div>
+        </a>
+        <br>
+        <a href="https://sr.mihoyo.com/news/124154?nav=news&type=news" style="text-decoration: none">
+            <div
+                style="position: relative; text-align: left; background-color: rgba(7, 7, 7, 0.4); width: 1200px; height: 150px; white-space: nowrap; margin: 0 auto; padding: 10px; box-sizing: border-box;border-radius: 10px;">
+                <div
+                    style="background-color: #debe79; width: 20px; height: 15px; color: #212121; font-size: 7px; text-align: center; line-height: 15px; margin-right: 10px; display: inline-block; vertical-align: middle;">
+                    新闻</div>
+                <p
+                    style="color: #f0f0f0; font-size: 15px; font-weight: bold; display: inline-block; vertical-align: middle;">
+                    《崩坏：星穹铁道》流萤角色PV——「壳中萤火」
+                </p>
+                <p style="color: #8e8e8e;font-size: 13px;text-decoration: none;">「火萤这种生物很神奇吧？它们或许会扑向火烛，或许会突然老化。但在那之前的每一个夜晚，它们的光芒会比星星更耀眼。」</p>
+                <img src="https://fastcdn.mihoyo.com/content-v2/hkrpg/124154/446332ff564150cc2d99113a2e0f2296_5465416924193991991.png"
+                    style="width: 400px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            </div>
+        </a>
+        <br>
+        <a href="https://sr.mihoyo.com/news/124106?nav=news&type=news" style="text-decoration: none">
+            <div
+                style="position: relative; text-align: left; background-color: rgba(7, 7, 7, 0.4); width: 1200px; height: 150px; white-space: nowrap; margin: 0 auto; padding: 10px; box-sizing: border-box;border-radius: 10px;">
+                <div
+                    style="background-color: #debe79; width: 20px; height: 15px; color: #212121; font-size: 7px; text-align: center; line-height: 15px; margin-right: 10px; display: inline-block; vertical-align: middle;">
+                    新闻</div>
+                <p
+                    style="color: #f0f0f0; font-size: 15px; font-weight: bold; display: inline-block; vertical-align: middle;">
+                    《崩坏：星穹铁道》走近星穹——「流萤：海洋防火刻不容缓」
+                </p>
+                <p style="color: #8e8e8e;font-size: 13px;text-decoration: none;">星核猎手中最为恐怖的危险分子，竟然是一位██████哈喽我是银狼。这期做得不错，提出表扬。</p>
+                <img src="https://fastcdn.mihoyo.com/content-v2/hkrpg/124106/dde86532918019091ab1eb81008fecad_8836295050964298285.png"
+                    style="width: 400px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            </div>
+        </a>
+        <br>
+        <a href="https://sr.mihoyo.com/news/124131?nav=news&type=news" style="text-decoration: none">
+            <div
+                style="position: relative; text-align: left; background-color: rgba(7, 7, 7, 0.4); width: 1200px; height: 150px; white-space: nowrap; margin: 0 auto; padding: 10px; box-sizing: border-box;border-radius: 10px;">
+                <div
+                    style="background-color: #debe79; width: 20px; height: 15px; color: #212121; font-size: 7px; text-align: center; line-height: 15px; margin-right: 10px; display: inline-block; vertical-align: middle;">
+                    新闻</div>
+                <p
+                    style="color: #f0f0f0; font-size: 15px; font-weight: bold; display: inline-block; vertical-align: middle;">
+                    《崩坏：星穹铁道》动画短片：「格拉默的余烬」
+                </p>
+                <p style="color: #8e8e8e;font-size: 13px;text-decoration: none;">「格拉默军规第22条，骑士应将一切献给女皇陛下——包括死亡。」</p>
+                <img src="https://fastcdn.mihoyo.com/content-v2/hkrpg/124131/b25b3a9f5425063aea695d8f42f5d114_7358687934651759326.jpg"
+                    style="width: 400px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            </div>
+        </a>
+        <br>
+        <a href="https://sr.mihoyo.com/news/124092?nav=news&type=news" style="text-decoration: none">
+            <div
+                style="position: relative; text-align: left; background-color: rgba(7, 7, 7, 0.4); width: 1200px; height: 150px; white-space: nowrap; margin: 0 auto; padding: 10px; box-sizing: border-box;border-radius: 10px;">
+                <div
+                    style="background-color: #debe79; width: 20px; height: 15px; color: #212121; font-size: 7px; text-align: center; line-height: 15px; margin-right: 10px; display: inline-block; vertical-align: middle;">
+                    新闻</div>
+                <p
+                    style="color: #f0f0f0; font-size: 15px; font-weight: bold; display: inline-block; vertical-align: middle;">
+                    《崩坏：星穹铁道》千星纪游PV：「此刻，在同一片星空下」
+                </p>
+                <p style="color: #8e8e8e;font-size: 13px;text-decoration: none;">「格拉默军规第1条，骑士应为自己的诞生感到荣耀。」</p>
+                <img src="https://fastcdn.mihoyo.com/content-v2/hkrpg/124092/ed7c2e3ab4b8d3ec7366f9ca4002ca04_2540881950042164788.jpg"
+                    style="width: 400px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            </div>
+        </a>
+        <br>
+        <a href="https://sr.mihoyo.com/news/123670?nav=news&type=news" style="text-decoration: none">
+            <div
+                style="position: relative; text-align: left; background-color: rgba(7, 7, 7, 0.4); width: 1200px; height: 150px; white-space: nowrap; margin: 0 auto; padding: 10px; box-sizing: border-box;border-radius: 10px;">
+                <div
+                    style="background-color: #debe79; width: 20px; height: 15px; color: #212121; font-size: 7px; text-align: center; line-height: 15px; margin-right: 10px; display: inline-block; vertical-align: middle;">
+                    新闻</div>
+                <p
+                    style="color: #f0f0f0; font-size: 15px; font-weight: bold; display: inline-block; vertical-align: middle;">
+                    《崩坏：星穹铁道》知更鸟角色PV——「孤独摇摆」
+                </p>
+                <p style="color: #8e8e8e;font-size: 13px;text-decoration: none;">在银河中孤独摇摆，能否使一颗心免于哀伤？</p>
+                <img src="https://fastcdn.mihoyo.com/content-v2/hkrpg/123670/6913010228ae4647d7d853471ea36881_4387874874493644723.png"
+                    style="width: 400px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            </div>
+        </a>
+        <br>
+        <a href="https://sr.mihoyo.com/news/123579?nav=news&type=news" style="text-decoration: none">
+            <div
+                style="position: relative; text-align: left; background-color: rgba(7, 7, 7, 0.4); width: 1200px; height: 150px; white-space: nowrap; margin: 0 auto; padding: 10px; box-sizing: border-box;border-radius: 10px;">
+                <div
+                    style="background-color: #debe79; width: 20px; height: 15px; color: #212121; font-size: 7px; text-align: center; line-height: 15px; margin-right: 10px; display: inline-block; vertical-align: middle;">
+                    新闻</div>
+                <p
+                    style="color: #f0f0f0; font-size: 15px; font-weight: bold; display: inline-block; vertical-align: middle;">
+                    《崩坏：星穹铁道》走近星穹——「知更鸟：『人生如歌』演唱会火热预售中」
+                </p>
+                <p style="color: #8e8e8e;font-size: 13px;text-decoration: none;">世界的旋律，是亿万生命的脉搏。</p>
+                <img src="https://fastcdn.mihoyo.com/content-v2/hkrpg/123579/6886fd449e5686b3086aa4e818f16134_7579813702944938020.png"
+                    style="width: 400px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            </div>
+        </a>
+        <br>
+    </div>
+</body>
+
+</html>
